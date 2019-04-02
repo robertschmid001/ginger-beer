@@ -7,6 +7,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 
 export default {
   name: 'App',
@@ -16,6 +17,17 @@ export default {
     return {
       //
     }
+  },
+  methods: {
+    getTrail () {
+      axios.get('http://localhost:5000/api/trail')
+      .then(response => {
+        this.$store.state.trail = response.data
+      })
+    }
+  },
+  mounted () {
+    this.getTrail();
   }
 }
 </script>

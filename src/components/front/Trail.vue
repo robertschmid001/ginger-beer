@@ -2,48 +2,34 @@
   <div class="hello">
   <h1 class="font-face">Where to find us?</h1>
     <v-content>
-      <!-- <section class="timeline">
-        <ul>
-          <li v-for="(info, index) in timeline_data" v-bind:key="index">
-            <span></span>
-            <div>{{ info.school }}</div>
-            <div>{{ info.address }}</div>
-            <div>{{ info.course }}</div>
-            <div class="year">
-              <span>{{ info.yearEnd }}</span>
-              <span>{{ info.yearStart }}</span>
-            </div>
-          </li>
-        </ul>
-      </section> -->
 
       <v-timeline>
-      <v-timeline-item
-        v-for="(item, index) in timeline_data"
-        :key="index"
-        small
-      >
-        <v-avatar slot="icon">
-        <img src="../../assets/images/wax.png">
-      </v-avatar>
-        <span slot="opposite">
-        {{item.yearStart}}<br>
-        {{item.yearEnd}}</span>
-        <v-card class="elevation-2 card" >
-          <v-card-title class="headline font-face" >{{item.title}}</v-card-title>
-          <v-card-text>
-             {{item.description}}
-          </v-card-text>
-          <v-card-text>
-             {{item.address}}
-          </v-card-text>
-        </v-card>
-      </v-timeline-item>
-    </v-timeline>
-
+        <v-timeline-item
+          v-for="(item, index) in this.$store.state.trail"
+          :key="index"
+          small
+        >
+          <v-avatar slot="icon">
+          <img src="../../assets/images/wax.png">
+          </v-avatar>
+          <span slot="opposite">
+          {{item.to}}<br>
+          {{item.from}}</span>
+          <v-card class="elevation-2 card" >
+            <v-card-title class="headline font-face" >{{item.title}}</v-card-title>
+            <v-card-text>
+              {{item.description}}
+            </v-card-text>
+            <v-card-text>
+              {{item.address1}} <br>
+              {{item.address2}} <br>
+              {{item.address3}}
+            </v-card-text>
+          </v-card>
+        </v-timeline-item>
+      </v-timeline>
 
     </v-content>
-    
   </div>
 </template>
 
@@ -68,56 +54,6 @@ export default {
         {
           color: 'indigo',
           icon: 'mdi-buffer'
-        }
-      ],
-      timeline_data: [
-        {
-          "title":"Cannock Castle",
-          "address":"Cannock street in Cannock city ABCDEF",
-          "description":"A brief description of what to expect at one of those shows, just saying",
-          "yearStart":"11th of May 2019",
-          "yearEnd":"14th of May 2019",
-          "icon": require('../../assets/images/wax.png')
-        },
-        {
-          "title":"St. Mary's College",
-          "address":"Daang Maharlika Highway, Tagum City",
-          "description":"A brief description of what to expect at one of those shows, just saying",
-          "yearStart":"27th of May 2019",
-          "yearEnd":"1st of June 2019",
-          "icon": "../../assets/images/wax.png"
-        },
-        {
-          "title":"A bloody steam show",
-          "address":"Sobrecary St, Tagum City",
-          "description":"A brief description of what to expect at one of those shows, just saying",
-          "yearStart":"18th of June 2019",
-          "yearEnd":"",
-          "icon": "../../assets/images/wax.png"
-        },
-        {
-          "title":"Cannock Castle",
-          "address":"Cannock street in Cannock city ABCDEF",
-          "description":"A brief description of what to expect at one of those shows, just saying",
-          "yearStart":"8th of July 2019",
-          "yearEnd":"10th of July 2019",
-          "icon": "../../assets/images/wax.png"
-        },
-        {
-          "title":"Victorian Tavern of Doom",
-          "address":"A brief description of what to expect at one of those shows, just saying",
-          "description":"",
-          "yearStart":"3rd of August 2019",
-          "yearEnd":"14th of August 2019",
-          "icon": "../../assets/images/wax.png"
-        },
-        {
-          "title":"Festival Viking etc..",
-          "address":" 5 Street of Chaos and despair Sobrecary St, WB88XX Hell on Earth",
-          "description":"A brief description of what to expect at one of those shows, just saying",
-          "yearStart":"5th of September 2019",
-          "yearEnd":"3&st of September 2019",
-          "icon": "../../assets/images/wax.png"
         }
       ]
     }
@@ -193,7 +129,9 @@ $light-blue: #4e9bfa;
   border: $thickness solid $color;
   border-radius: $radius;
 }
-
+.headline {
+padding: 5px 10px;
+}
 body {
     // background-color: $bg-color;
 }

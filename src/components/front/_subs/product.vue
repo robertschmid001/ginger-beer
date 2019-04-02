@@ -1,16 +1,16 @@
 <template>
   <div class="component-product">
-    <div class="img-wrapper">
+    <!-- <div class="img-wrapper">
       <img :src="product.image" alt="item.title">
-    </div>
+    </div> -->
     <div class="content-wrapper font-alg">
       <h2 class="font-face">{{product.title}}</h2>
-       <br>
        <div class="text-wrapper font-face">
          {{product.description}}
        </div>
 
     </div>
+       <img class="wax-image" :src="require('../../../assets/images/wax.png')" alt="">
   </div>
 </template>
 
@@ -30,29 +30,40 @@ export default {
   // font-weight: normal;
   // font-style: normal;
 }
-
+h2 {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 10px;
+}
 .component-product {
   /* background-color: white; */
-  color: black;
+  // color: black;
   // height: 400px;
+  position: relative;
+  background-color: #1a1b1eb3;
+  color: black;
   background-size: cover;
-  background-image: url("./../../../assets/images/parch.jpg");
+  background-image: url("./../../../assets/images/label.jpg");
   width: contain;
-  min-height: 400px;
+  padding-bottom: 50px;
   display: flex;
-  padding: 20px 0px;
 }
-
+.text-wrapper {
+  text-align: center;
+}
 .content-wrapper {
-  padding: 10px;
+  max-width: 800px;
+  padding: 20px 50px;
 }
 .img-wrapper {
   align-items: center;
   display: flex;
 }
-img {
-  max-height: 100%;
-  max-width: 250px;
-  padding: 0px 10px;
+.wax-image {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
 }
 </style>

@@ -1,12 +1,38 @@
 <template>
-  <div class="hello">
-    <h1 @click="clickity" >My Navbar</h1>
-  </div>
-</template>
+   <v-menu
+      bottom
+      origin="center center"
+      transition="scale-transition"
+      offset-x
+      left
+      dark
+    >
+    <template v-slot:activator="{ on }">
+      <div class="navbar" v-on="on" >Menu</div>
+    </template>
 
+    <v-list >
+      <v-list-tile v-for="(item, i) in list" :key="i" @click="">
+          <img class="image-nav" src="../../assets/images/vikingShield.png" alt="">
+          <v-list-tile-title class="item-title">{{ item }}</v-list-tile-title>
+      </v-list-tile>
+    </v-list>
+  </v-menu>
+</template>
 <script>
 export default {
   name: 'Navbar',
+  data () {
+    return {
+      list: [
+        "History",
+        "Products list",
+        "Gallery",
+        "Trail",
+        "Footer"
+      ]
+    }
+  },
   props: {
   },
   methods: {
@@ -19,24 +45,41 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.hello {
-  background-color: black;
+.item-title {
+  padding-left: 5px;
+}
+.image-nav {
+  width: 20px;
+  -webkit-transition:-webkit-transform 1s ease;
+  -moz-transition:   -moz-transform 1s ease;
+  -ms-transition:    -ms-transform 1s ease;
+      transition:        transform 1s ease;
+}
+.theme--dark.v-list {
+  background-color: rgba(0, 0, 0, 0.342);
+}
+.theme--dark.v-list:hover {
+}
+.theme--dark.v-list /deep/ a:hover {
   color: white;
-  height: 60px;
-  /* border-bottom:10px solid white; */
+  font-weight: 700;
 }
-h1 {
-  margin: 0;
+.theme--dark.v-list /deep/ a:hover .image-nav {
+  -webkit-transform: rotate(90deg)
 }
-ul {
-  list-style-type: none;
-  padding: 0;
+.navbar {
+  position: absolute;
+  color: #c1c1c1;
+  z-index: 10;
+  top: 40px;
+  right: 50px;
+  font-size: 30px;
+  cursor: pointer;
 }
-li {
-  display: inline-block;
-  margin: 0 10px;
+.navbar:hover {
+  color: white;
 }
-a {
-  color: #42b983;
+.link {
+  color: black;
 }
 </style>

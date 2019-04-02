@@ -5,9 +5,9 @@
       <v-flex xs12 sm10 offset-sm1> 
         <v-card>
           <v-container fluid grid-list-md>
-            <v-layout row wrap>
-              <v-flex v-for="(i, index) in items" :key="index" sm3>
-                <img :src="i.image" class="image" alt="lorem" width="100%" height="100%">
+            <v-layout row wrap aspect-ratio="1.7778">
+              <v-flex class="flex-wrapper" lazy-src v-for="(i, index) in items" :key="index" xs12 sm6 md4>
+                <v-img aspect-ratio="1.7" :src="i.image" class="image" alt="lorem" width="100%" height="100%"></v-img>
               </v-flex>
             </v-layout>
           </v-container>
@@ -69,12 +69,17 @@ export default {
 <style scoped>
 
 #gallery {
-  background-color: black;
   color: white;
   background-image: url('../../assets/images/wood1.jpg');
-    padding: 40px;
+  background-repeat: repeat;
+  padding: 120px 40px;
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
+}
+.container.grid-list-md .layout .flex {
+  padding: 1px;
+  overflow: hidden;
 }
 </style>

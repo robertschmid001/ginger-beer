@@ -10,24 +10,16 @@
               <v-flex dark xs12 sm12 md12 class="name-wrapper no-padding">
                 <v-flex xs12 sm6 md6 class="no-padding ">
                   <v-text-field dark class="no-padding top-inputs" color="white" type="text" name="fname" v-model="form.name" :rules="FnRules" label="Your Name" required ></v-text-field>
-                  <!-- <input type="text" name="prenom" class="input-name" v-model="form.fname" placeholder="* First name"> -->
                 </v-flex>
                 <v-flex xs12 sm6 md6 class="no-padding">
                   <v-text-field dark class="no-padding top-inputs" color="white" type="email" name="email" v-model="form.email" :rules="EmailRules" label="Your E-mail" required ></v-text-field>
                 </v-flex>
               </v-flex>
-
-              <!-- <input type="email" name="email" class="input-email" v-model="form.email" placeholder="* Email"> -->
-              <!-- <input type="text" name="company" class="input-email" v-model="form.company" placeholder="Company"> -->
-              <!-- <input type="telephone" class="input-tel" v-model="form.tel" placeholder="Telephone"> -->
               <v-flex md12>
-              <v-textarea color="white" class="top-inputs" box dark name="message" label="Your Message" :value="form.text" ></v-textarea>
-                </v-flex>
-              <!-- <v-text-field dark v-if="valid"  type='submit' value='Submit'/> -->
+                <v-textarea color="white" class="top-inputs" box dark name="message" label="Your Message" :value="form.text" ></v-textarea>
+              </v-flex>
               <v-flex md12 class="button-wrap" v-if="valid">
-                <button type="submit" value='Submit' class="footer-butn">
-                  Get in touch
-                </button>
+                <button type="submit" value='Submit' class="footer-butn">Get in touch</button>
               </v-flex>
             </form>
           </v-flex>
@@ -40,8 +32,7 @@
               <div>England</div>
             </div>
           </v-flex>
-
-
+          
       </v-container>
    </div>
 </template>

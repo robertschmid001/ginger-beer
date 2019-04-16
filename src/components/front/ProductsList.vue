@@ -78,7 +78,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang='scss'>
 @import '../../styles/GlobalStyles.scss';
 
@@ -95,7 +94,6 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  // padding-bottom: 20px;
   padding: 50px 0;
   min-height: 480px;
 }
@@ -170,20 +168,13 @@ h2 {
   background: none;
   overflow: visible;
   border: none;
-
-  // background-image: url("./../../assets/images/parch.jpg");
   padding: 20px;
 }
 img {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
   max-height: 300px;
-  /* width: 300px; */
   display: flex;
-  /* align-items: baseline;
-  position: absolute;
-  bottom: 0px;
-  right: 0; */
   padding: 0 5px;
   z-index: 200;
 
@@ -197,8 +188,6 @@ title {
   background-image: url("./../../assets/images/label.jpg");
   background-color: black;
   color: white;
-  // border-top:10px solid white;
-  // background-image: url("./../../assets/images/parch.jpg");
 }
 h1 {
   margin: 0;

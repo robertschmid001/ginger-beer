@@ -1,13 +1,11 @@
 <template>
   <v-app>
-    <!-- <Navbar/> -->
     <Header/>
     <History/>
     <Carousel/>
     <Gallery/>
     <ProductsList/>
     <Outside/>
-    <!-- <Trail/> -->
     <Footer/>
   </v-app>
 </template>
@@ -16,7 +14,6 @@
 import Header from './Header.vue'
 import Footer from './Footer.vue'
 import Outside from './Outside.vue'
-import Trail from './Trail.vue'
 import Gallery from './Gallery.vue'
 import History from './History.vue'
 import Navbar from './Navbar.vue'
@@ -33,7 +30,6 @@ export default {
     History,
     Navbar,
     ProductsList,
-    Trail,
     Carousel
   },
   data () {

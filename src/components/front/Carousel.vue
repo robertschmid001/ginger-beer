@@ -1,25 +1,14 @@
 <template>
   <div id="object-carousel">
-    <!-- <div class="products-title-wrapper" >
-      <h1 class="pointer font-face" @click="switchCat(true, 'drink')" :class="{isActive: this.actClass === 'drink'}">Drinks</h1>
-      <h1 class="pointer font-face" @click="switchCat(false, 'object')" :class="{isActive: this.actClass === 'object'}">Objects</h1>
-    </div> -->
-
-      <v-layout align-center column justify-center>
-
-          <v-carousel interval="8000" max="100" class="carousel" hide-delimiters v-model="carouselIndex">
-            <v-carousel-item
-              v-for="(item, i) in filterObjects"
-              :key="i"
-              :src="item.image" class="pointer carousel-item" alt="item.title" @click.native="click(item)"
-            >{{carouselIndex}}</v-carousel-item>
-          </v-carousel>
-
-      </v-layout>
-
-    <!-- <div class="procomp-wrapper" v-if="activeProduct">
-      <product :product="active"/>
-    </div> -->
+    <v-layout align-center column justify-center>
+      <v-carousel interval="8000" max="100" class="carousel" hide-delimiters v-model="carouselIndex">
+        <v-carousel-item
+          v-for="(item, i) in filterObjects"
+          :key="i"
+          :src="item.image" class="pointer carousel-item" alt="item.title" @click.native="click(item)"
+        >{{carouselIndex}}</v-carousel-item>
+      </v-carousel>
+    </v-layout>
   </div>
 </template>
 
@@ -137,8 +126,6 @@ export default {
   font-family: 'Algerian';
   src: url('../../assets/fonts/Algerian-Regular.ttf') format('truetype');
 }
-
-  
 h1 {
   padding: 0 20px;
   color: rgba(0, 0, 0, 0.4);
@@ -180,18 +167,11 @@ h2 {
 .slide {
   background: none;
   border: none;
-  // background-image: url("./../../assets/images/parch.jpg");
   padding: 20px;
 }
 img {
-  // height: 100%;
   width: auto;
-  /* width: 300px; */
   display: flex;
-  /* align-items: baseline;
-  position: absolute;
-  bottom: 0px;
-  right: 0; */
 }
 title {
   position: absolute;

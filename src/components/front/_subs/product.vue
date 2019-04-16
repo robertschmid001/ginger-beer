@@ -1,8 +1,5 @@
 <template>
   <div class="component-product">
-    <!-- <div class="img-wrapper">
-      <img :src="product.image" alt="item.title">
-    </div> -->
     <div class="content-wrapper font-alg">
       <h2 class="font-face">{{product.title}}</h2>
        <div class="text-wrapper font-face">
@@ -27,8 +24,6 @@ export default {
 @font-face {
   font-family: 'Algerian';
   src: url('../../../assets/fonts/Algerian-Regular.ttf') format('truetype');
-  // font-weight: normal;
-  // font-style: normal;
 }
 h2 {
   display: flex;
@@ -36,9 +31,6 @@ h2 {
   padding-bottom: 10px;
 }
 .component-product {
-  /* background-color: white; */
-  // color: black;
-  // height: 400px;
   position: relative;
   background-color: #1a1b1eb3;
   color: black;

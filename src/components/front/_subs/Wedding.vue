@@ -21,8 +21,6 @@ export default {
 @font-face {
   font-family: 'Algerian';
   src: url('../../../assets/fonts/Algerian-Regular.ttf') format('truetype');
-  // font-weight: normal;
-  // font-style: normal;
 }
 h2 {
   font-weight: 500;
@@ -35,7 +33,7 @@ h2 {
   background-size: cover;
   height: 100%;
   background-image: url("./../../../assets/images/parchment2.png");
-    -webkit-filter: grayscale(50%);
+  -webkit-filter: grayscale(50%);
   position: relative;
   left: 100%;
   -webkit-transition:-webkit-transform 2s ease;
@@ -49,7 +47,6 @@ h2 {
   background-size: cover;
   background-image: url("./../../../assets/images/wed2.jpg");
   width: contain;
-  // -webkit-clip-path: polygon(10% 0, 0 100%, 100% 100%, 100% 0);
 }
 .component-wedding:hover .right-slide {
   -webkit-transform: translate(-100%, 0);

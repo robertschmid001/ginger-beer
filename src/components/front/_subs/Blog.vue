@@ -1,7 +1,7 @@
 <template>
   <div class="component-blog">
-      <div class="left-slide font-face">
-            <h2>Visit Snowdonia!</h2>
+    <div class="left-slide font-face">
+      <h2>Visit Snowdonia!</h2>
       <div>
         You can customize labels etc for any events blah blah
       </div>
@@ -21,8 +21,6 @@ export default {
 @font-face {
   font-family: 'Algerian';
   src: url('../../../assets/fonts/Algerian-Regular.ttf') format('truetype');
-  // font-weight: normal;
-  // font-style: normal;
 }
 h2 {
   font-weight: 500;

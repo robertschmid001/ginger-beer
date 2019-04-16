@@ -1,5 +1,5 @@
 <template>
-  <div id="navbar">
+  <div id="header">
       <v-layout justify-center class="layout-wrapper">
           <div class="font-logo title-logo">Spyder</div>
           <h1 class="display-3 font-weight-fat font-face title-wrap">Septimus Spyder Drinks</h1>
@@ -8,14 +8,10 @@
 </template>
 
 <script>
-import Nav from './Navbar.vue'
 
 export default {
   name: 'Header',
   props: {
-  },
-  components: {
-    'navbar': Nav
   },
   methods: {
   }
@@ -55,7 +51,7 @@ export default {
 .icon:hover {
   color: white;
 }
-#navbar {
+#header {
   position: relative;
   background-color: black;
   color: white;

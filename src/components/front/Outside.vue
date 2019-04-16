@@ -8,8 +8,6 @@
         <v-flex d-flex xs12 sm12 md6 class="wedding-wrapper">
           <Blog/>
         </v-flex>
-          <!-- <div class="black-div">
-          </div> -->
         <v-flex d-flex xs12 sm12 md6 class="wedding-wrapper">
           <Wedding/>
         </v-flex>
@@ -33,7 +31,6 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 @import '../../styles/GlobalStyles.scss';
 
@@ -41,32 +38,22 @@ export default {
   font-family: 'Algerian';
   src: url('../../assets/fonts/Algerian-Regular.ttf') format('truetype');
 }
-/* .black-div {
-  background-color: #242325;
-  position: absolute;
-  width: 1200px;
-  height: 1000px;
-  transform: rotate(20deg);
-  left: 45%;
-  } */
-  h1 {
-    text-align: center;
-    color: white;
-  }
-  .wedding-wrapper {
-    z-index: 3;
-    padding: 0px!important;
-  }
-  .title-wrapper {
-    /* background-size: cover;
-    background-image: url("./../../assets/images/label.jpg"); */
-    background-color:#1F1E20;
-    width: 100%;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
+h1 {
+  text-align: center;
+  color: white;
+}
+.wedding-wrapper {
+  z-index: 3;
+  padding: 0px!important;
+}
+.title-wrapper {
+  background-color:#1F1E20;
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .hello {
   background-color: none;
   color: white;
@@ -74,8 +61,8 @@ export default {
   overflow: hidden;
 }
 .container-wrapper {
-overflow: hidden;
-padding:0;
+  overflow: hidden;
+  padding:0;
 }
 .layout {
   position: relative;

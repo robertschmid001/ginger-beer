@@ -1,8 +1,7 @@
 <template>
   <div id="footer" dark>
-      <v-container dark class="bottom-wrapper">
 
-          <v-flex xs12 sm6 md6 dark class="left-wrapper-footer">
+          <v-flex xs12 sm12 md6 dark class="left-wrapper-footer">
             <form dark color="brown darken-4" class="form-wrapper" action="https://getsimpleform.com/messages?form_api_token=018b48548472bbfe16f32354053ebbb4" method="post">
               <!-- the redirect_to is optional, the form will redirect to the referrer on submission --> 
               <!-- <input type='hidden' name='redirect_to' value='<http://localhost:8080>' /> -->
@@ -23,7 +22,7 @@
               </v-flex>
             </form>
           </v-flex>
-          <v-flex md6 class="right-bot-wrapper" >
+          <v-flex xs12 sm12 md6 class="right-bot-wrapper" >
             <div>
               <h2>Spyder Soft Drinks</h2>
               <div>@: septimus.contact@gmail.com</div>
@@ -33,7 +32,6 @@
             </div>
           </v-flex>
           
-      </v-container>
    </div>
 </template>
 
@@ -79,12 +77,13 @@ export default {
 <style scoped lang="scss">
 #footer {
   background-color: #1F1E20 ;
-  /* background-image: url('../assets/images/parch.jpg'); */ 
+  display: flex;
+  flex-wrap: wrap;
 }
 .top-inputs {
 }
 .left-wrapper-footer {
-  padding: 0 30px;
+  padding: 50px 30px;
 }
 .button-wrap {
   display: flex;
@@ -108,13 +107,16 @@ export default {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  width: 100%;
 }
 .app-modif {
   
 height:100px;  
 }
 .right-bot-wrapper {
-  padding: 30px;
+  padding: 50px 30px;
   color: white;
   p {
 
@@ -145,9 +147,4 @@ height:100px;
   display: flex;
   flex-direction:column;
 }
-.hello {
-  /* background-color: black;
-  color: white; */
-  
-} 
 </style>

@@ -4,6 +4,7 @@ const cors = require('cors');
 const path = require("path");
 const app = express();
 
+app.use(express.static(__dirname + "/dist"));
 app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname + "/dist/index.html"));
 });
@@ -11,7 +12,6 @@ app.get("/*", function (req, res) {
 app.use(bodyParser.json());
 app.use(cors());
 
-app.use(express.static(__dirname + "/dist"));
 
 const posts = require('./routes/api/trail');
 app.use('/api/trail', posts);

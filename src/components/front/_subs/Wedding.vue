@@ -51,5 +51,5 @@ h2 {
 .component-wedding:hover .right-slide {
   -webkit-transform: translate(-100%, 0);
 }
-
+//just a test
 </style>

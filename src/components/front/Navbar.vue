@@ -12,8 +12,8 @@
     </template>
 
     <v-list >
-      <v-list-tile v-for="(item, i) in list" :key="i" @click="">
-          <img class="image-nav" src="../../assets/images/vikingShield.png" alt="">
+      <v-list-tile v-for="(item, i) in list" :key="i">
+          <img class="image-nav" src="../../assets/images/redshield.png" alt="">
           <v-list-tile-title class="item-title">{{ item }}</v-list-tile-title>
       </v-list-tile>
     </v-list>
@@ -36,9 +36,6 @@ export default {
   props: {
   },
   methods: {
-    clickity () {
-      console.log(this.$store.state.trail, 'trail')
-    }
   }
 }
 </script>

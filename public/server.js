@@ -13,8 +13,8 @@ app.use(bodyParser.json());
 app.use(cors());
 
 
-const posts = require('./routes/api/trail');
-app.use('/api/trail', posts);
+// const posts = require('./routes/api/trail');
+// app.use('/api/trail', posts);
 
 const port = process.env.PORT || 5000;
 

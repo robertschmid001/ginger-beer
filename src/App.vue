@@ -19,15 +19,15 @@ export default {
     }
   },
   methods: {
-    getTrail () {
-      axios.get('http://localhost:5000/api/trail')
-      .then(response => {
-        this.$store.state.trail = response.data
-      })
-    }
+    // getTrail () {
+    //   axios.get('http://localhost:5000/api/trail')
+    //   .then(response => {
+    //     this.$store.state.trail = response.data
+    //   })
+    // }
   },
   mounted () {
-    this.getTrail();
+    // this.getTrail();
   }
 }
 </script>

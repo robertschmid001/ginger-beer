@@ -1,20 +1,20 @@
 const express = require('express');
 const bodyParser = require('body-parser');
-const serveStatic = require('serve-static')
+//const serveStatic = require('serve-static')
 const cors = require('cors');
 const path = require("path");
 const app = express();
 
-// app.use(express.static(__dirname + "/dist"));
-app.use("/", serveStatic(path.join(__dirname, '/dist')))
-app.get('*', function (req, res) {
-  res.sendFile(__dirname + '/index.html')
-})
-
-
-// app.get("/*", function (req, res) {
-//   res.sendFile(path.join(__dirname + "/dist/index.html"));
-// });
+// app.use("/", serveStatic(path.join(__dirname, '/dist')))
+// app.get('*', function (req, res) {
+  //   res.sendFile(__dirname + '/dist/index.html')
+  // })
+  
+  
+app.use(express.static(__dirname + "/dist"));
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname + "/dist/index.html"));
+});
 // Middleware
 app.use(bodyParser.json());
 app.use(cors());

@@ -185,7 +185,7 @@ title {
   left: 0px;
 }
 #product-list {
-  background-image: url("./../../assets/images/label.jpg");
+  background-image: url("./../../assets/images/label_smaller.jpeg");
   background-color: black;
   color: white;
 }

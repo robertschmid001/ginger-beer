@@ -1,11 +1,11 @@
 <template>
   <div id="object-carousel">
     <v-layout align-center column justify-center>
-      <v-carousel interval="8000" max="100" class="carousel" hide-delimiters v-model="carouselIndex">
+      <v-carousel height="auto" interval="8000" max="100" class="carousel" hide-delimiters v-model="carouselIndex">
         <v-carousel-item
           v-for="(item, i) in filterObjects"
           :key="i"
-          :src="item.image" class="pointer carousel-item" alt="item.title" @click.native="click(item)"
+          :src="item.image" class="pointer carousel-item" alt="item.title" @click.native="click(item, i)"
         >{{carouselIndex}}</v-carousel-item>
       </v-carousel>
     </v-layout>
@@ -59,7 +59,7 @@ export default {
         cat: "drink"
       },
       {
-        image: require('../../assets/images/objects/gingerbeer3.jpg'),
+        image: require('../../assets/images/objects/gingerbeer3re.jpg'),
         title: "This is an object4",
         description: "This is just a random4 description of the current, selected product",
         cat: "object"
@@ -163,7 +163,8 @@ h2 {
   background: none;
   overflow: hidden;
   border: none;
-}
+
+  }
 .slide {
   background: none;
   border: none;

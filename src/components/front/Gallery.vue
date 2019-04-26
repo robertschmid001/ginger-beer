@@ -2,27 +2,30 @@
   <div id="gallery">
 
     <v-layout row>
-      <v-flex xs12 sm10 offset-sm1> 
+      <v-flex xs12 sm10 offset-sm1>
         <v-card>
           <v-container fluid grid-list-md>
             <v-layout row wrap aspect-ratio="1.7778">
               <v-flex class="flex-wrapper" lazy-src v-for="(i, index) in items" :key="index" xs12 sm6 md4>
-                <v-img aspect-ratio="1.7" :src="i.image" class="image" alt="lorem" width="100%" height="100%"></v-img>
+                <v-img aspect-ratio="1.7" :src="i.image" class="image pointer" alt="lorem" width="100%" height="100%" @click="open(i.image)"></v-img>
               </v-flex>
             </v-layout>
           </v-container>
         </v-card>
       </v-flex>
     </v-layout>
-
+  <bigImage v-if="showImage" @closeMe="close" :activeImage="active" />
   </div>
 </template>
 
 <script>
+import bigImage from './_subs/CloseUp.vue'
 export default {
   name: 'Gallery',
   data () {
     return {
+      active: '',
+      showImage: false,
       items: [
         {
           image: require('../../assets/images/gallery/archer.jpg')
@@ -60,15 +63,30 @@ export default {
       ]
     }
   },
+  components: {
+    bigImage
+  },
+  methods: {
+    open (image) {
+      this.active =image
+      this.showImage = true
+    },
+    close () {
+      console.log('click')
+      this.showImage = false
+    }
+  },
   props: {
   }
 }
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style scoped lang="scss">
+@import '../../styles/GlobalStyles.scss';
 
 #gallery {
+  position: relative;
   color: white;
   background-image: url('../../assets/images/wood1.jpg');
   background-repeat: repeat;
@@ -81,5 +99,13 @@ export default {
 .container.grid-list-md .layout .flex {
   padding: 1px;
   overflow: hidden;
+}
+.image {
+    transition:transform 0.25s ease;
+}
+
+.image:hover {
+    -webkit-transform:scale(1.2);
+    transform:scale(1.2);
 }
 </style>

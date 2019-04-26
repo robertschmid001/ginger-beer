@@ -35,7 +35,7 @@ h2 {
   background-color: #1a1b1eb3;
   color: black;
   background-size: cover;
-  background-image: url("./../../../assets/images/label.jpg");
+  background-image: url("./../../../assets/images/label_smaller.jpeg");
   width: contain;
   padding-bottom: 50px;
   display: flex;

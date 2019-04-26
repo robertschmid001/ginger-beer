@@ -10,20 +10,20 @@
     </div>
     <div class="door-wrapper">
       <div class="left">
-        <img class="image-left6 globalShield" src="../../assets/images/vikingshield.png" alt="">
-        <img class="image-left5 globalShield" src="../../assets/images/vikingshield.png" alt="">
-        <img class="image-left4 globalShield" src="../../assets/images/vikingshield.png" alt="">
-        <img class="image-left2 globalShield" src="../../assets/images/vikingshield.png" alt="">
-        <img class="image-left3 globalShield" src="../../assets/images/vikingshield.png" alt="">
-        <img class="image-left globalShield" src="../../assets/images/vikingshield.png" alt="">
+        <img class="image-left6 globalShield" src="../../assets/images/vikingshield_resized.png" alt="">
+        <img class="image-left5 globalShield" src="../../assets/images/vikingshield_resized.png" alt="">
+        <img class="image-left4 globalShield" src="../../assets/images/vikingshield_resized.png" alt="">
+        <img class="image-left2 globalShield" src="../../assets/images/vikingshield_resized.png" alt="">
+        <img class="image-left3 globalShield" src="../../assets/images/vikingshield_resized.png" alt="">
+        <img class="image-left globalShield" src="../../assets/images/vikingshield_resized.png" alt="">
       </div>
       <div class="right">
-        <img class="image-right globalShield" src="../../assets/images/vikingshield.png" alt="">
-        <img class="image-right2 globalShield" src="../../assets/images/vikingshield.png" alt="">
-        <img class="image-right3 globalShield" src="../../assets/images/vikingshield.png" alt="">
-        <img class="image-right4 globalShield" src="../../assets/images/vikingshield.png" alt="">
-        <img class="image-right5 globalShield" src="../../assets/images/vikingshield.png" alt="">
-        <img class="image-right6 globalShield" src="../../assets/images/vikingshield.png" alt="">
+        <img class="image-right globalShield" src="../../assets/images/vikingshield_resized.png" alt="">
+        <img class="image-right2 globalShield" src="../../assets/images/vikingshield_resized.png" alt="">
+        <img class="image-right3 globalShield" src="../../assets/images/vikingshield_resized.png" alt="">
+        <img class="image-right4 globalShield" src="../../assets/images/vikingshield_resized.png" alt="">
+        <img class="image-right5 globalShield" src="../../assets/images/vikingshield_resized.png" alt="">
+        <img class="image-right6 globalShield" src="../../assets/images/vikingshield_resized.png" alt="">
       </div>
     </div>
   </div>

@@ -30,7 +30,7 @@ h2 {
 }
 .right-slide{
   padding: 70px 117px;
-  background-size: cover;
+  background-size: contain;
   height: 100%;
   background-image: url("./../../../assets/images/parchment2.png");
   -webkit-filter: grayscale(50%);

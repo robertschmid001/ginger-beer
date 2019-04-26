@@ -38,18 +38,18 @@ h2 {
 }
 .left-slide{
   padding: 70px 117px;
-  background-size: cover;
+  background-size: contain;
   height: 100%;
   background-image: url("./../../../assets/images/parchment2.png");
   -webkit-filter: grayscale(50%);
   position: relative;
-  left: 100%;
+  right: 100%;
   -webkit-transition:-webkit-transform 2s ease;
   -moz-transition:   -moz-transform 2s ease;
   -ms-transition:    -ms-transform 2s ease;
     transition:        transform 2s ease;
 }
 .component-blog:hover .left-slide {
-  -webkit-transform: translate(-100%, 0);
+  -webkit-transform: translate(100%, 0);
 }
 </style>

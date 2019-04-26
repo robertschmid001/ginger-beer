@@ -1,8 +1,8 @@
 <template>
   <div id="header">
       <v-layout justify-center class="layout-wrapper">
-          <div class="font-logo title-logo">Spyder</div>
-          <h1 class="display-3 font-weight-fat font-face title-wrap">Septimus Spyder Drinks</h1>
+          
+          <h1 class="display-3 font-weight-fat font-face title-wrap"> <div class="font-logo"> Septimus Spyder</div></h1>
       </v-layout>
   </div>
 </template>
@@ -30,6 +30,12 @@ export default {
   font-family: 'MATURASC';
   src: url('../../assets/fonts/MATURASC.TTF') format('truetype');
 }
+
+// @include media(">phone", "<tablet") {}
+// @include media(">tablet", "<950px") {}
+// @include breakpoint(453px $breakpoint-tablet) {}
+// @include breakpoint($breakpoint-tablet 850px) {}
+
 .title-logo {
   position: relative;
   top: 68%;
@@ -39,9 +45,12 @@ export default {
   top: 70%;
 }
 .layout-wrapper {
-  position: relative;
-  background-image: url('../../assets/images/gingerbeer9.jpg');
-  background-size: cover;
+    /* position: relative; */
+    background-image: url(/img/gingerbeer9.cf055f9a.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 .icon {
   font-size: 60px;

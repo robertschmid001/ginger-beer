@@ -2,7 +2,7 @@
   <div class="big-image">
     <div class="content-wrapper">
       <i class="material-icons icons-image pointer" @click="previous">navigate_before</i>
-      <img class="wax-image pointer" :src="this.activeI" alt="" @click="close">
+      <img class="image-closeup pointer" :src="this.activeI" alt="" @click="close">
       <i class="material-icons icons-image pointer" @click="next">navigate_next</i>
     </div>
   </div>
@@ -69,7 +69,7 @@ h2 {
   justify-content: center;
   // padding: 20px 50px;
 }
-.wax-image {
+.image-closeup {
   // position: relative;
   max-height: 500px;
   max-width: 700px;

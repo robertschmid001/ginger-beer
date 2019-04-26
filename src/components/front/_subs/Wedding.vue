@@ -50,6 +50,8 @@ h2 {
   background-size: cover;
   background-image: url("./../../../assets/images/wed2.jpg");
   width: contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .component-wedding:hover .right-slide {
   -webkit-transform: translate(-110%, 0);

@@ -2,16 +2,13 @@
 //   font-family: "Algerian";
 //   src: url("./assets/fonts/Algerian-Regular.ttf");
 // }
-
-$breakpoints: (phone: 640px,
-tablet: 768px,
-desktop: 1024px) !default;
+$phone: 640px;
+$tablet: 768px;
+$desktop: 1024px;
 
 // @include media(">phone", "<tablet") {}
-
 // @include media(">tablet", "<950px") {}
 // @include breakpoint(453px $breakpoint-tablet) {}
-
 // @include breakpoint($breakpoint-tablet 850px) {}
 
 

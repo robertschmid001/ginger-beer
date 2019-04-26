@@ -85,6 +85,7 @@ export default {
   font-family: 'Algerian';
   src: url('../../assets/fonts/Algerian-Regular.ttf') format('truetype');
 }
+
 .parallax {
   height: auto;
   padding: 50px 0;
@@ -94,7 +95,7 @@ export default {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 50px 0;
+  padding: 50px 2px;
   min-height: 480px;
 }
 h1 {
@@ -173,12 +174,20 @@ h2 {
 img {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
-  max-height: 300px;
   display: flex;
-  padding: 0 5px;
   z-index: 200;
-
 }
+img {
+  max-height: 300px;
+}
+@media only screen and (max-width: $phone) {
+  img {
+    max-height: 250px;
+  }
+}
+
+// max-height: 250px;
+
 title {
   position: absolute;
   top: 0px;
@@ -188,6 +197,7 @@ title {
   background-image: url("./../../assets/images/label_smaller.jpeg");
   background-color: black;
   color: white;
+  overflow: hidden;
 }
 h1 {
   margin: 0;

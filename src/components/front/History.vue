@@ -116,7 +116,9 @@ export default {
         transition:        transform 2s ease;
 }
 #history {
+  //background-color: black;
   background-color: black;
+  // background: linear-gradient(to top,rgba(3, 3, 3, 100) 85%,rgba(3, 3, 3, 0)100%);
   color: white;
   height: 470px;
   position: relative;

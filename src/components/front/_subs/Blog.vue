@@ -36,20 +36,24 @@ h2 {
   -webkit-filter: grayscale(10%);
   width: contain;
 }
+
 .left-slide{
-  padding: 70px 117px;
-  background-size: contain;
+  // padding: 70px 117px;
+  padding: 20px;
+  text-align: center;
+  background-size: cover;
   height: 100%;
-  background-image: url("./../../../assets/images/parchment2.png");
+  //background-image: url("./../../../assets/images/parchment2.png");
+  background-image: url("./../../../assets/images/label_smaller.jpeg");
   -webkit-filter: grayscale(50%);
   position: relative;
-  right: 100%;
+  right: 110%;
   -webkit-transition:-webkit-transform 2s ease;
   -moz-transition:   -moz-transform 2s ease;
   -ms-transition:    -ms-transform 2s ease;
     transition:        transform 2s ease;
 }
 .component-blog:hover .left-slide {
-  -webkit-transform: translate(100%, 0);
+  -webkit-transform: translate(110%, 0);
 }
 </style>

@@ -29,13 +29,16 @@ h2 {
   text-align: center;
 }
 .right-slide{
-  padding: 70px 117px;
-  background-size: contain;
+  box-sizing: border-box;
+  padding: 20px;
+  background-size: cover;
+  text-align: center;
   height: 100%;
-  background-image: url("./../../../assets/images/parchment2.png");
+  //background-image: url("./../../../assets/images/parchment2.png");
+  background-image: url("./../../../assets/images/label_smaller.jpeg");
   -webkit-filter: grayscale(50%);
   position: relative;
-  left: 100%;
+  left: 110%;
   -webkit-transition:-webkit-transform 2s ease;
   -moz-transition:   -moz-transform 2s ease;
   -ms-transition:    -ms-transform 2s ease;
@@ -49,7 +52,7 @@ h2 {
   width: contain;
 }
 .component-wedding:hover .right-slide {
-  -webkit-transform: translate(-100%, 0);
+  -webkit-transform: translate(-110%, 0);
 }
 //just a test
 </style>

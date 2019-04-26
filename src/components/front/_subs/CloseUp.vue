@@ -2,7 +2,7 @@
   <div class="big-image">
     <div class="content-wrapper">
       <i class="material-icons icons-image pointer" @click="previous">navigate_before</i>
-      <img class="wax-image" :src="this.activeI" alt="" @click="close">
+      <img class="wax-image pointer" :src="this.activeI" alt="" @click="close">
       <i class="material-icons icons-image pointer" @click="next">navigate_next</i>
     </div>
   </div>
@@ -19,7 +19,6 @@ export default {
   },
   watch: {
     activeImage: function (val) {
-      console.log(val, 'val')
         this.activeI = val
     }
   },

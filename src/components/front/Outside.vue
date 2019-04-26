@@ -44,7 +44,7 @@ h1 {
 }
 .wedding-wrapper {
   z-index: 3;
-  padding: 0px!important;
+  padding: 0!important;
 }
 .title-wrapper {
   background-color:#1F1E20;
@@ -55,7 +55,8 @@ h1 {
   justify-content: center;
 }
 .hello {
-  background-color: none;
+  justify-content: center;
+  background-color:#1F1E20;
   color: white;
   display: flex;
   overflow: hidden;

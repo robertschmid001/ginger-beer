@@ -116,7 +116,6 @@ export default {
         transition:        transform 2s ease;
 }
 #history {
-  //background-color: black;
   background-color: black;
   // background: linear-gradient(to top,rgba(3, 3, 3, 100) 85%,rgba(3, 3, 3, 0)100%);
   color: white;
@@ -162,6 +161,58 @@ export default {
   width: 100%;
 }
 h1 {
+  padding-top: 30px;
   margin: 0;
+}
+@media only screen and (max-width: $phone) {
+  h1 {
+    font-size: 20px;
+  }
+  #history {
+    padding: 5% 10%;
+    text-align: center;
+  }
+  .image-left6 {
+    display: none;
+  }
+  .image-left5 {
+    display: none;
+  }
+  .image-left4 {
+    display: none;
+  }
+  .image-left2 {
+    display: none;
+  }
+  .image-left3 {
+    right: -20%;
+  }
+  .image-left {
+    right: -65%;
+  }
+  .image-right {
+    display: hidden;
+  }
+  .image-right2 {
+    display: hidden;
+  }
+  .image-right3 {
+    display: hidden;
+  }
+  .image-right4 {
+    display: hidden;
+  }
+  .image-right5 {
+    left: -20%;
+  }
+  .image-right6 {
+    left: -65%;
+  }
+  #history:hover .right {
+    -webkit-transform: translate(140%, 0)
+  }
+  #history:hover .left {
+    -webkit-transform: translate(-140%, 0)
+  }
 }
 </style>

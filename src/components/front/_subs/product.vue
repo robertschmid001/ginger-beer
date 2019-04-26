@@ -29,6 +29,7 @@ h2 {
   display: flex;
   justify-content: center;
   padding-bottom: 10px;
+  text-align:center;
 }
 .component-product {
   position: relative;

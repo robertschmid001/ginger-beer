@@ -76,4 +76,13 @@ h2 {
   border: 10px solid white;
   box-sizing: border-box;
 }
+@media only screen and (max-width: $phone) {
+.image-closeup {
+    // position: relative;
+    max-height: 500px;
+    width: 70%;
+    border: 10px solid white;
+    box-sizing: border-box;
+  }
+}
 </style>

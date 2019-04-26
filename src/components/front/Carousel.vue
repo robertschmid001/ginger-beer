@@ -126,6 +126,7 @@ export default {
   font-family: 'Algerian';
   src: url('../../assets/fonts/Algerian-Regular.ttf') format('truetype');
 }
+
 h1 {
   padding: 0 20px;
   color: rgba(0, 0, 0, 0.4);

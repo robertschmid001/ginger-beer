@@ -1,9 +1,9 @@
 <template>
   <div class="component-blog">
     <div class="left-slide font-face">
-      <h2>Visit Snowdonia!</h2>
+      <h2>Escape to Snowdonia</h2>
       <div>
-        You can customize labels etc for any events blah blah
+        Book a break in our Norwegian Log Cabin!
       </div>
     </div>
   </div>

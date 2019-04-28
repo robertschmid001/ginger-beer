@@ -18,17 +18,17 @@
                 <v-textarea color="white" class="top-inputs" box dark name="message" label="Your Message" :value="form.text" ></v-textarea>
               </v-flex>
               <v-flex md12 class="button-wrap" v-if="valid">
-                <button type="submit" value='Submit' class="footer-butn">Get in touch</button>
+                <button type="submit" value='Submit' class="footer-butn">Get in Touch</button>
               </v-flex>
             </form>
           </v-flex>
           <v-flex xs12 sm12 md6 class="right-bot-wrapper" >
             <div>
-              <h2>Spyder Soft Drinks</h2>
-              <div>@: septimus.contact@gmail.com</div>
-              <div>Address: 34 garrick court</div>
-              <div>WD12 6VX</div>
-              <div>England</div>
+              <h2>Septimus Spyder</h2>
+              <div>@: Spyder.septimus@gmail.com</div>
+              <div>Address: 54, Yew Tree Avenue</div>
+              <div>Lichfield, Staffordshire, WS14 9UA </div>
+              <div>United Kingdom</div>
             </div>
           </v-flex>
           
@@ -118,9 +118,7 @@ height:100px;
 .right-bot-wrapper {
   padding: 50px 30px;
   color: white;
-  p {
-
-  }
+  line-height: 30px;
 }
 .no-padding {
   padding: 0px!important;

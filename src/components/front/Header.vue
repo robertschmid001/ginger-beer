@@ -1,8 +1,7 @@
 <template>
   <div id="header">
       <v-layout justify-center class="layout-wrapper">
-          
-          <h1 class="display-3 font-weight-fat font-face title-wrap"> <div class="font-logo"> Septimus Spyder</div></h1>
+          <h1 class="display-3 font-weight-fat font-face title-wrap"> <div class="font-logo">Septimus Spyder o' Tameworpig <br> Son of Wilhelm,  son of Casper </div></h1>
       </v-layout>
   </div>
 </template>

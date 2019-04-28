@@ -1,12 +1,22 @@
 <template>
   <div id="history">
     <div class="title-wrapper-history">
-      <h1 class="font-face">The origins of the Spyder dynasty!</h1>
+      <h1 class="font-face">Hail Good Fellows and Nobles !</h1>
     </div>
     <div class="text-wrapper">
-      Back in the earlier part of last century, Granpa Wilhelm Caspar Schmid used to brew ginger beer to his own secret recipe in the mountains of Wellhausen near Fraunfeld, Eastern Switzerland. Ably assisted by diminutive sidekick, Septimus Spyder, he dug deep holes in the winter snow base to keep the freshly bottled products cool until the summer festive season.
-      Spyder™ Ginger Beer and Spyder™ Dandelion & Burdock are now brewed to those original recipes and bottled deep in the heart of the old kingdom of Mercia..
-      In a barn where time forgot, we forage for berries in the autumn and brew an ecclectic range of small beers ready for our medieval events.
+      &nbsp; Barn brewed Mead ...a drink from the gods ...inspired through Devine Intervention of Bee Juice....Lord Hogsbreath Mead in Saxon Stoneware Crocks .
+<br><br>
+      &nbsp; Whether you are an Archer ..a Knight ....or just plain Guttersnype ...
+<br><br>
+      &nbsp; Find us at events throughout the Kingdoms 
+<br><br>
+      &nbsp; Mercia...Danelaw...stride King Offa's Wall to the brave Celts...down to Wessex past the bandits of Londiniun (if you dare). 
+<br><br>
+      &nbsp; Travel by coach ...or on horseback ...to festivals of Musique ...or reinventions of Battles of Old...
+<br><br>
+      &nbsp; Download...Bushcraft...Bloodstock...Ramblin' Man...Castles of Hever..Ludlow..York..Cardiff...Caerphilly..
+      <br><br>
+      &nbsp; We exist for your pleasure.. 
     </div>
     <div class="door-wrapper">
       <div class="left">

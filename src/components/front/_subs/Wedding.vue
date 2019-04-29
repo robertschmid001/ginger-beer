@@ -5,6 +5,7 @@
       <div>
         You can customize labels etc for any events blah blah
       </div>
+      <div class="color-bloc" ></div>
     </div>
   </div>
 </template>
@@ -21,6 +22,13 @@ export default {
 @font-face {
   font-family: 'Algerian';
   src: url('../../../assets/fonts/Algerian-Regular.ttf') format('truetype');
+}
+.color-bloc {
+  position: absolute;
+  right: -100px;
+  background-color: yellow;
+  width: 400px;
+  height: 400px;
 }
 h2 {
   font-weight: 500;

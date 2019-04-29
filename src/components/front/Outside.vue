@@ -2,14 +2,11 @@
   <div class="hello">
     <v-container fluid grid-list-md class="container-wrapper">
       <div class="title-wrapper">
-        <h1 class="font-face">What ye old shieet</h1>
+        <h1 class="font-face">Escape to Snowdonia</h1>
       </div>
-      <v-layout row wrap class="layout">
-        <v-flex d-flex xs12 sm12 md6 class="wedding-wrapper">
+      <v-layout row wrap align-center justify-center class="layout">
+        <v-flex d-flex xs12 sm12 md8 class="wedding-wrapper">
           <Blog/>
-        </v-flex>
-        <v-flex d-flex xs12 sm12 md6 class="wedding-wrapper">
-          <Wedding/>
         </v-flex>
       </v-layout>
     </v-container>
@@ -18,15 +15,13 @@
 
 <script>
 import Blog from './_subs/Blog.vue'
-import Wedding from './_subs/Wedding.vue'
 
 export default {
   name: 'Outside',
   props: {
   },
   components: {
-    Blog,
-    Wedding
+    Blog
   }
 }
 </script>
@@ -64,8 +59,11 @@ h1 {
 .container-wrapper {
   overflow: hidden;
   padding:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .layout {
-  position: relative;
+  // position: relative;
 }
 </style>

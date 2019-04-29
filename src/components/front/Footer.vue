@@ -25,7 +25,7 @@
           <v-flex xs12 sm12 md6 class="right-bot-wrapper" >
             <div>
               <h2>Septimus Spyder</h2>
-              <div>@: Spyder.septimus@gmail.com</div>
+              <div>Send a Raven to Spyder.septimus@gmail.com</div>
               <div>Address: 54, Yew Tree Avenue</div>
               <div>Lichfield, Staffordshire, WS14 9UA </div>
               <div>United Kingdom</div>

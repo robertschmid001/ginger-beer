@@ -7,15 +7,15 @@
       &nbsp; Barn brewed Mead ...a drink from the gods ...inspired through Devine Intervention of Bee Juice....Lord Hogsbreath Mead in Saxon Stoneware Crocks .
 <br>
       &nbsp; Whether you are an Archer ..a Knight ....or just plain Guttersnype ...
-<br>
+<br><br>
       &nbsp; Find us at events throughout the Kingdoms 
 <br>
       &nbsp; Mercia ...Danelaw ...stride King Offa's Wall to the brave Celts ...down to Wessex past the bandits of Londiniun (if you dare). 
 <br>
       &nbsp; Travel by coach ...or on horseback ...to festivals of Musique ...or reinventions of Battles of Old...
-<br>
+<br><br>
       &nbsp; Download ...Bushcraft ...Bloodstock ...Ramblin' Man ...Castles of Hever ..Ludlow ..York ..Cardiff ...Caerphilly..
-      <br>
+      <br><br>
       &nbsp; We exist for your pleasure.. 
     </div>
     <div class="door-wrapper">

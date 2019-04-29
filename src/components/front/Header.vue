@@ -75,7 +75,7 @@ h1 {
     // text-align: left;
   }
   h1 {
-    font-size: 50px!important;
+    font-size: 45px!important;
   }
   h2 {
     font-size: 20px!important;

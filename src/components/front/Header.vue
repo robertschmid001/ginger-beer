@@ -1,8 +1,11 @@
 <template>
   <div id="header">
     <div class="wrapper">
-      <v-layout justify-center class="layout-wrapper">
-          <h1 class="display-3 font-weight-fat font-face title-wrap"> <div class="font-logo">Septimus Spyder o' Tameworpig <br> Son of Wilhelm,  son of Casper </div></h1>
+      <v-layout justify-center class="layout-wrapper font-logo">
+        <div class="title-wrap">
+          <h1 class="display-3 font-weight-fat font-logo">Septimus Spyder o' Tameworpig</h1>
+          <h2>Son of Wilhelm,  son of Casper</h2>
+        </div>
       </v-layout>
     </div>
   </div>
@@ -31,35 +34,25 @@ export default {
   font-family: 'MATURASC';
   src: url('../../assets/fonts/MATURASC.TTF') format('truetype');
 }
-
-// @include media(">phone", "<tablet") {}
-// @include media(">tablet", "<950px") {}
-// @include breakpoint(453px $breakpoint-tablet) {}
-// @include breakpoint($breakpoint-tablet 850px) {}
 .wrapper {
   display: flex;
   width: 100%;
-  background-image: url('/img/gingerbeer9.cf055f9a.jpg')!important;
+  background-image: url('../../assets/images/gingerbeer9.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
 }
-.title-logo {
-  position: relative;
-  top: 68%;
-}
 .title-wrap {
+  width: 100%;
   position: relative;
-  top: 70%;
+  text-align: center;
+  top: 35%;
 }
 .layout-wrapper {
-    /* position: relative; */
-}
-.icon {
-  font-size: 60px;
-  color: #c1c1c1;
-  cursor: pointer;
+  /* position: relative; */
+  display: flex;
+  flex-direction: column;
 }
 .icon:hover {
   color: white;
@@ -71,10 +64,21 @@ export default {
   height: 100vh;
   display: flex;
 }
-h4 {
+h2 {
   margin:0;
 }
 h1 {
   margin: 0;
+}
+@media only screen and (max-width: $phone) {
+  .title-wrap {
+    // text-align: left;
+  }
+  h1 {
+    font-size: 50px!important;
+  }
+  h2 {
+    font-size: 20px!important;
+  }
 }
 </style>

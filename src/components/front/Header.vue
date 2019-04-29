@@ -45,11 +45,6 @@ export default {
 }
 .layout-wrapper {
     /* position: relative; */
-    background-image: url(/img/gingerbeer9.cf055f9a.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
 }
 .icon {
   font-size: 60px;
@@ -61,10 +56,14 @@ export default {
 }
 #header {
   position: relative;
-  background-color: black;
   color: white;
   height: 100vh;
   display: flex;
+  background-image: url(/img/gingerbeer9.cf055f9a.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
 }
 h4 {
   margin:0;

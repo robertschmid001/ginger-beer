@@ -59,7 +59,7 @@ export default {
   color: white;
   height: 100vh;
   display: flex;
-  background-image: url(/img/gingerbeer9.cf055f9a.jpg);
+  background-image: url("/img/gingerbeer9.cf055f9a.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

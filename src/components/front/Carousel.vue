@@ -59,7 +59,7 @@ export default {
         cat: "drink"
       },
       {
-        image: require('../../assets/images/objects/gingerbeer3re.jpg'),
+        image: require('../../assets/images/objects/gingerbeer3.jpg'),
         title: "This is an object4",
         description: "This is just a random4 description of the current, selected product",
         cat: "object"

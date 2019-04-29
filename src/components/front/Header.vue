@@ -1,8 +1,10 @@
 <template>
   <div id="header">
+    <div class="wrapper">
       <v-layout justify-center class="layout-wrapper">
           <h1 class="display-3 font-weight-fat font-face title-wrap"> <div class="font-logo">Septimus Spyder o' Tameworpig <br> Son of Wilhelm,  son of Casper </div></h1>
       </v-layout>
+    </div>
   </div>
 </template>
 
@@ -34,7 +36,15 @@ export default {
 // @include media(">tablet", "<950px") {}
 // @include breakpoint(453px $breakpoint-tablet) {}
 // @include breakpoint($breakpoint-tablet 850px) {}
-
+.wrapper {
+  display: flex;
+  width: 100%;
+  background-image: url('/img/gingerbeer9.cf055f9a.jpg')!important;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
 .title-logo {
   position: relative;
   top: 68%;
@@ -55,15 +65,11 @@ export default {
   color: white;
 }
 #header {
+  background-color: black;
   position: relative;
   color: white;
   height: 100vh;
   display: flex;
-  background-image: url("/img/gingerbeer9.cf055f9a.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 h4 {
   margin:0;

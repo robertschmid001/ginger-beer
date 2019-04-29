@@ -5,17 +5,17 @@
     </div>
     <div class="text-wrapper">
       &nbsp; Barn brewed Mead ...a drink from the gods ...inspired through Devine Intervention of Bee Juice....Lord Hogsbreath Mead in Saxon Stoneware Crocks .
-<br><br>
+<br>
       &nbsp; Whether you are an Archer ..a Knight ....or just plain Guttersnype ...
-<br><br>
+<br>
       &nbsp; Find us at events throughout the Kingdoms 
-<br><br>
-      &nbsp; Mercia...Danelaw...stride King Offa's Wall to the brave Celts...down to Wessex past the bandits of Londiniun (if you dare). 
-<br><br>
+<br>
+      &nbsp; Mercia ...Danelaw ...stride King Offa's Wall to the brave Celts ...down to Wessex past the bandits of Londiniun (if you dare). 
+<br>
       &nbsp; Travel by coach ...or on horseback ...to festivals of Musique ...or reinventions of Battles of Old...
-<br><br>
-      &nbsp; Download...Bushcraft...Bloodstock...Ramblin' Man...Castles of Hever..Ludlow..York..Cardiff...Caerphilly..
-      <br><br>
+<br>
+      &nbsp; Download ...Bushcraft ...Bloodstock ...Ramblin' Man ...Castles of Hever ..Ludlow ..York ..Cardiff ...Caerphilly..
+      <br>
       &nbsp; We exist for your pleasure.. 
     </div>
     <div class="door-wrapper">
@@ -177,6 +177,9 @@ h1 {
 @media only screen and (max-width: $phone) {
   h1 {
     font-size: 20px;
+  }
+  .text-wrapper {
+    font-size: 12px;
   }
   #history {
     padding: 5% 10%;

@@ -2,7 +2,10 @@
   <div class="big-image">
     <div class="content-wrapper">
       <i class="material-icons icons-image pointer" @click="previous">navigate_before</i>
-      <img class="image-closeup pointer" :src="this.activeI" alt="" @click="close">
+      <div class="image-wrapper" >
+      <i class="material-icons clear-icon pointer" @click="close">clear</i>
+        <img class="image-closeup" :src="this.activeI" alt="">
+      </div>
       <i class="material-icons icons-image pointer" @click="next">navigate_next</i>
     </div>
   </div>
@@ -38,7 +41,16 @@ export default {
 
 <style scoped lang="scss">
 @import '../../../styles/GlobalStyles.scss';
-
+.image-wrapper {
+  position: relative;
+}
+.clear-icon {
+  position: absolute;
+  top: -42px;
+  right: -43px;
+  font-size: 45px;
+  color: white;
+}
 
 .icons-image {
   color: white;
@@ -80,7 +92,7 @@ h2 {
 .image-closeup {
     // position: relative;
     max-height: 500px;
-    width: 70%;
+    width: 100%;
     border: 10px solid white;
     box-sizing: border-box;
   }

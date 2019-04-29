@@ -1,5 +1,7 @@
 <template>
   <div class="component-blog" v-on:mouseover="isOpening" v-on:mouseleave="isClosing">
+    <!-- <img class="wax-image" :src="require('../../../assets/images/wax.png')" alt=""> -->
+    <i class="material-icons info-icon pointer">info</i>
     <transition name="slide-left">
       <div class="left-slide font-face" v-show="isOpened" @click="isClosing">
         <div class="content-wrapper" >
@@ -45,6 +47,20 @@ export default {
 @font-face {
   font-family: 'Algerian';
   src: url('../../../assets/fonts/Algerian-Regular.ttf') format('truetype');
+}
+.wax-image {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 60px;
+  height: 60px;
+}
+.info-icon {
+  position: absolute;
+  bottom: 15px;
+  right: 14px;
+  font-size: 53px;
+  color: #1F1E20 ;
 }
 .content-wrapper {
   // position: relative;

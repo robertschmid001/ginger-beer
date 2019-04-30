@@ -5,7 +5,7 @@
       <h1 class="font-face">Ye' Old Drinks</h1>
     </div>
       <div class="list-wrapper">
-        <div class="image-wrapper"  :key="index" v-for="(item, index) in DrinkComp">
+        <div class="image-wrapper"  :key="index" v-for="(item, index) in info">
           <img :src="item.image" class="pointer" :class="{'isActive': index === n, 'isBefore': index < n, 'isAfter': index > n }" :alt="item.title" @click="click(item, index)">
         </div>
       </div>
@@ -29,16 +29,14 @@ export default {
     return {
       carouselIndex: null,
       info: [
-        { image:require('../../assets/images/beers/gingerbeer7bis.png'),title: "Lord Hogsbreath Mead", description:"Brewed with only the finest roots of ginger, dandelion and the burdock thistle, these are drinks perfect for the summer and winter alike. Refreshing and cool in the summer with a warmer, spicy side for the winter.An ideal gift for someone special or a treat for yourself. Bring a bottle to a picnic or a party! The Spyde Soft Drinks range are brewed for the discerning adult and child alike.", cat:"drink" },
-        { image:require('../../assets/images/beers/gingerbeer7bis.png'),title: "Wilfred the Hairy Bitter Ale", description:"Brewed with only the finest roots of ginger, dandelion and the burdock thistle, these are drinks perfect for the summer and winter alike. Refreshing and cool in the summer with a warmer, spicy side for the winter.An ideal gift for someone special or a treat for yourself. Bring a bottle to a picnic or a party! The Spyde Soft Drinks range are brewed for the discerning adult and child alike.", cat:"drink" },
-        { image:require('../../assets/images/beers/gingerbeer7bis.png'),title: "Eric the Red Rouge Ale", description:"Brewed with only the finest roots of ginger, dandelion and the burdock thistle, these are drinks perfect for the summer and winter alike. Refreshing and cool in the summer with a warmer, spicy side for the winter.An ideal gift for someone special or a treat for yourself. Bring a bottle to a picnic or a party! The Spyde Soft Drinks range are brewed for the discerning adult and child alike.", cat:"drink" },
-        { image:require('../../assets/images/beers/gingerbeer7bis.png'),title: "Percival Ale", description:"Brewed with only the finest roots of ginger, dandelion and the burdock thistle, these are drinks perfect for the summer and winter alike. Refreshing and cool in the summer with a warmer, spicy side for the winter.An ideal gift for someone special or a treat for yourself. Bring a bottle to a picnic or a party! The Spyde Soft Drinks range are brewed for the discerning adult and child alike.", cat:"drink" },
-        { image:require('../../assets/images/beers/gingerbeer7bis.png'),title: "Lancelot Ale", description:"Brewed with only the finest roots of ginger, dandelion and the burdock thistle, these are drinks perfect for the summer and winter alike. Refreshing and cool in the summer with a warmer, spicy side for the winter.An ideal gift for someone special or a treat for yourself. Bring a bottle to a picnic or a party! The Spyde Soft Drinks range are brewed for the discerning adult and child alike.", cat:"drink" },
-        { image:require('../../assets/images/beers/gingerbeer7bis.png'),title: "Mulled Cider", description:"Brewed with only the finest roots of ginger, dandelion and the burdock thistle, these are drinks perfect for the summer and winter alike. Refreshing and cool in the summer with a warmer, spicy side for the winter.An ideal gift for someone special or a treat for yourself. Bring a bottle to a picnic or a party! The Spyde Soft Drinks range are brewed for the discerning adult and child alike.", cat:"drink" },
-        { image:require('../../assets/images/objects/gingerbeer3.jpg'),title: "This is an object4", description:"This is just a random4 description of the current, selected product", cat:"object" },
-        { image:require('../../assets/images/objects/gingerbeer4.jpg'),title: "This is an object2", description:"This is just a random2 description of the current, selected product", cat:"object" },
-        { image:require('../../assets/images/objects/gingerbeer3.jpg'),title: "This is an object1", description:"This is just a random1 description of the current, selected product", cat:"object" },
-        { image:require('../../assets/images/objects/gingerbeer4.jpg'),title: "This is an object3", description:"This is just a random3 description of the current, selected product", cat:"object" },
+        { image:require('../../assets/images/beers/gingerbeer7bis.png'),title: "SPYDER MEAD", description:"Saxon Crock of Lord Hogsbreath of Tameworpig Spyder Mead.<br><br> 500 ml of spicy mead brewed at 14 % abv. Drink either neat at room temperature ...or mixed with Ginger Beer or tonic water with ice." },
+        { image:require('../../assets/images/beers/gingerbeer7bis.png'),title: "ERIC THE RED", description:"Dark ruby Ale dedicated to the famous Norse explorer Erik Thorvaldsson [a] (c. 950 –  c.1003),<br><br> 500 ml of dark ruby Ale... 4.8 % abv drink cool." },
+        { image:require('../../assets/images/beers/gingerbeer7bis.png'),title: "LANCELOT", description:"Very light hoppy Ale ...dedicated to William Marshal (c.1147 - c. 1214) known as our Greatest Knight and from whom Lancelot stories were based.<br><br> 500 ml of very light hoppy Ale...4.5% abv drink cool." },
+        { image:require('../../assets/images/beers/gingerbeer7bis.png'),title: "WILFRED THE HAIRY", description:"Bitter Ale ...dedicated to the Count of Barcelona (died c. 897) legend has it that Wilfred was in fact bald. It is unknown when he was born.<br><br> 500 ml of bitter Ale ...4.2% abv drink cool. STRAWBERRY CIDERA medium cider with an awesome fruity taste. 500 ml ...4.0 % abv drink cool" },
+        { image:require('../../assets/images/beers/gingerbeer7bis.png'),title: "STRAWBERRY CIDER", description:"A medium cider with an awesome fruity taste.<br><br> 500 ml ...4.0 % abv drink cool" },
+        { image:require('../../assets/images/beers/gingerbeer7bis.png'),title: "DOG AND COCK", description:"Strong Light Ale dedicated to a band of Poor Fellow-Soldiers of Christ and of the Temple of Solomon ...otherwise known as Knights Templars.<br><br> 500ml of Strong Light Ale ...7% abv drink cool" },
+        { image:require('../../assets/images/beers/gingerbeer7bis.png'),title: "MULLED CIDER", description:"Medium strong cider with spice.<br><br> 500ml ....5% abv drink cool" },
+        { image:require('../../assets/images/beers/gingerbeer7bis.png'),title: "BLACKCURRANT CIDER", description:"A medium cider with an awesome fruity taste.<br><br> 500 ml ...4.0 % abv drink cool" },
       ],
       activeProduct:[],
       switch: true,
@@ -51,14 +49,6 @@ export default {
   computed: {
     active () {
       return this.activeProduct
-    },
-    DrinkComp () {
-      var filtered = this.info.filter(e => {
-        if (e.cat === 'drink') {
-          return e
-        }
-      })
-      return filtered
     },
   },
   components: {
@@ -73,7 +63,7 @@ export default {
     }
   },
   mounted () {
-    this.activeProduct = this.DrinkComp[0]
+    this.activeProduct = this.info[0]
   }
 }
 </script>

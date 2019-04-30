@@ -2,8 +2,7 @@
   <div class="component-product">
     <div class="content-wrapper font-alg">
       <h2 class="font-face">{{product.title}}</h2>
-       <div class="text-wrapper font-face">
-         {{product.description}}
+       <div class="text-wrapper font-face" v-html="product.description">
        </div>
 
     </div>
@@ -28,7 +27,7 @@ export default {
 h2 {
   display: flex;
   justify-content: center;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   text-align:center;
 }
 .component-product {

@@ -1,5 +1,7 @@
 <template>
   <div id="footer" dark>
+    <hr>
+    <div class="left-right-wrapper" >
 
           <v-flex xs12 sm12 md6 dark class="left-wrapper-footer">
             <form dark color="brown darken-4" class="form-wrapper" action="https://getsimpleform.com/messages?form_api_token=018b48548472bbfe16f32354053ebbb4" method="post">
@@ -31,6 +33,7 @@
               <div>United Kingdom</div>
             </div>
           </v-flex>
+      </div>
           <div class="end-wrapper" >
             <p class="end-text" >
               The Ginger Beer Company UK Ltd. Company number 4352992. VAT Number 144407822
@@ -83,11 +86,21 @@ export default {
   background-color: #1F1E20 ;
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+}
+.left-right-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+hr {
+  margin: 60px 20% 20px 20%;
 }
 .top-inputs {
 }
 .left-wrapper-footer {
   padding: 50px 30px;
+  justify-content: center;
+  display: flex;
 }
 .button-wrap {
   display: flex;
@@ -147,6 +160,8 @@ export default {
 .form-wrapper {
   display: flex;
   flex-direction:column;
+  max-width: 600px;
+  width: 100%;
 }
 .end-text {
   color: white;

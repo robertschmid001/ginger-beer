@@ -84,7 +84,7 @@ h2 {
   background-size: cover;
   background-image: url("./../../../assets/images/cabin.jpg");
   -webkit-filter: grayscale(10%);
-  max-width: 900px;
+  width: contain;
   overflow: hidden;
 }
 

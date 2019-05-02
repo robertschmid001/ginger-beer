@@ -6,7 +6,7 @@
       </div>
       <v-layout row wrap align-center justify-center class="layout">
         <v-flex d-flex xs12 sm12 md8 class="wedding-wrapper">
-          <Blog/>
+          <Blog  class="blog" />
         </v-flex>
       </v-layout>
     </v-container>
@@ -40,6 +40,10 @@ h1 {
 .wedding-wrapper {
   z-index: 3;
   padding: 0!important;
+  justify-content: center;
+}
+.blog {
+  max-width: 800px;
 }
 .title-wrapper {
   background-color:#1F1E20;

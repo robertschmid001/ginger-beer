@@ -134,6 +134,7 @@ export default {
   z-index: 2;
   padding: 5% 20%;
   overflow: hidden;
+  text-align: center;
 }
 #history:hover .left {
   -webkit-transform: translate(-100%, 0);
@@ -226,6 +227,13 @@ h1 {
   }
   #history:hover .left {
     -webkit-transform: translate(-140%, 0)
+  }
+}
+@media only screen and (min-width: $tablet) {
+
+  #history {
+    padding: 5% 30%;
+    text-align: center;
   }
 }
 </style>

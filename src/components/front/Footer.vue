@@ -31,7 +31,11 @@
               <div>United Kingdom</div>
             </div>
           </v-flex>
-          
+          <div class="end-wrapper" >
+            <p class="end-text" >
+              The Ginger Beer Company UK Ltd. Company number 4352992. VAT Number 144407822
+            </p>
+          </div>
    </div>
 </template>
 
@@ -112,8 +116,7 @@ export default {
   width: 100%;
 }
 .app-modif {
-  
-height:100px;  
+  height:100px;
 }
 .right-bot-wrapper {
   padding: 50px 30px;
@@ -144,5 +147,14 @@ height:100px;
 .form-wrapper {
   display: flex;
   flex-direction:column;
+}
+.end-text {
+  color: white;
+  font-size: 10px;
+  margin: 0;
+  padding-left: 30px;
+}
+h2 {
+  margin-bottom: 20px;
 }
 </style>

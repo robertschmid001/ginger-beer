@@ -2,7 +2,7 @@
   <div id="product-list">
 
     <div class="products-title-wrapper" >
-      <h1 class="font-face">Ye' Old Drinks</h1>
+      <h1 class="font-face">Ye' Olde Drinks</h1>
     </div>
       <div class="list-wrapper">
         <div class="image-wrapper"  :key="index" v-for="(item, index) in info">
@@ -12,9 +12,9 @@
 
     <v-parallax class="parallax" align-center dark style="height: auto;" :src="require('../../assets/images/wood1.jpg')">
       <v-layout align-center column justify-center>
-        <div class="procomp-wrapper" v-if="activeProduct">
-          <product :product="active"/>
-        </div>
+          <div class="procomp-wrapper" v-if="activeProduct">
+            <product :product="active"/>
+          </div>
       </v-layout>
     </v-parallax>
   </div>
@@ -32,7 +32,7 @@ export default {
         { image:require('../../assets/images/beers/mead.png'),title: "SPYDER MEAD", description:"Saxon Crock of Lord Hogsbreath of Tameworpig Spyder Mead.<br><br> 500 ml of spicy mead brewed at 14 % abv. Drink either neat at room temperature ...or mixed with Ginger Beer or tonic water with ice." },
         { image:require('../../assets/images/beers/eric.png'),title: "ERIC THE RED", description:"Dark ruby Ale dedicated to the famous Norse explorer Erik Thorvaldsson [a] (c. 950 –  c.1003),<br><br> 500 ml of dark ruby Ale... 4.8 % abv drink cool." },
         { image:require('../../assets/images/beers/lancelot.png'),title: "LANCELOT", description:"Very light hoppy Ale ...dedicated to William Marshal (c.1147 - c. 1214) known as our Greatest Knight and from whom Lancelot stories were based.<br><br> 500 ml of very light hoppy Ale...4.5% abv drink cool." },
-        { image:require('../../assets/images/beers/wilfred.png'),title: "WILFRED THE HAIRY", description:"Bitter Ale ...dedicated to the Count of Barcelona (died c. 897) legend has it that Wilfred was in fact bald. It is unknown when he was born.<br><br> 500 ml of bitter Ale ...4.2% abv drink cool. STRAWBERRY CIDERA medium cider with an awesome fruity taste. 500 ml ...4.0 % abv drink cool" },
+        { image:require('../../assets/images/beers/wilfred.png'),title: "WILFRED THE HAIRY", description:"Bitter Ale ...dedicated to the Count of Barcelona (died c. 897) legend has it that Wilfred was in fact bald. It is unknown when he was born.<br><br> 500 ml of bitter Ale ...4.2% abv drink cool." },
         { image:require('../../assets/images/beers/strawberry.png'),title: "STRAWBERRY CIDER", description:"A medium cider with an awesome fruity taste.<br><br> 500 ml ...4.0 % abv drink cool" },
         { image:require('../../assets/images/beers/cock.png'),title: "DOG AND COCK", description:"Strong Light Ale dedicated to a band of Poor Fellow-Soldiers of Christ and of the Temple of Solomon ...otherwise known as Knights Templars.<br><br> 500ml of Strong Light Ale ...7% abv drink cool" },
         { image:require('../../assets/images/beers/spicy.png'),title: "MULLED CIDER", description:"Medium strong cider with spice.<br><br> 500ml ....5% abv drink cool" },
@@ -79,6 +79,7 @@ export default {
 .parallax {
   height: auto;
   padding: 50px 0;
+  min-height: 350px;
 }
 .list-wrapper {
   width: 100%;
@@ -86,7 +87,7 @@ export default {
   flex-wrap: wrap;
   justify-content: center;
   padding: 50px 2px;
-  min-height: 480px;
+  min-height: 500px;
 }
 h1 {
   padding: 0 20px;

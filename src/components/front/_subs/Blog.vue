@@ -84,7 +84,7 @@ h2 {
   background-size: cover;
   background-image: url("./../../../assets/images/cabin.jpg");
   -webkit-filter: grayscale(10%);
-  width: contain;
+  max-width: 900px;
   overflow: hidden;
 }
 
@@ -124,6 +124,11 @@ h2 {
 @media only screen and (max-width: $phone) {
 .text-wrapper {
   font-size: 11px;
+  }
+}
+@media only screen and (min-width: $desktop) {
+  .left-slide {
+    padding: 20px 80px;
   }
 }
 </style>

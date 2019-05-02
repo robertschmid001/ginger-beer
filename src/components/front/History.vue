@@ -62,7 +62,7 @@ export default {
 }
 .globalShield {
   position: absolute;
-  top:-5%;
+  top: -30px;
   height: 500px;
   overflow: visible;
   -webkit-transition:-webkit-transform 2s ease;
@@ -129,11 +129,10 @@ export default {
   background-color: black;
   // background: linear-gradient(to top,rgba(3, 3, 3, 100) 85%,rgba(3, 3, 3, 0)100%);
   color: white;
-  height: 470px;
+  height: 500px;
   position: relative;
   z-index: 2;
-  padding: 5% 20%;
-  overflow: hidden;
+  padding: 0% 20%;
   text-align: center;
 }
 #history:hover .left {
@@ -183,7 +182,7 @@ h1 {
     font-size: 12px;
   }
   #history {
-    padding: 5% 10%;
+    padding: 0% 10%;
     text-align: center;
   }
   .image-left6 {
@@ -199,10 +198,10 @@ h1 {
     display: none;
   }
   .image-left3 {
-    right: -20%;
+    right: -30%;
   }
   .image-left {
-    right: -65%;
+    right: -80%;
   }
   .image-right {
     display: hidden;
@@ -220,19 +219,19 @@ h1 {
     left: -20%;
   }
   .image-right6 {
-    left: -65%;
+    left: -80%;
   }
   #history:hover .right {
-    -webkit-transform: translate(140%, 0)
+    -webkit-transform: translate(150%, 0)
   }
   #history:hover .left {
-    -webkit-transform: translate(-140%, 0)
+    -webkit-transform: translate(-150%, 0)
   }
 }
 @media only screen and (min-width: $tablet) {
 
   #history {
-    padding: 5% 30%;
+    padding: 0% 30%;
     text-align: center;
   }
 }

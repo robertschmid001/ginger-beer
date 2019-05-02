@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app id="main-vue" >
     <Header/>
     <History/>
     <Carousel/>
@@ -41,3 +41,9 @@ export default {
   }
 }
 </script>
+<style scoped>
+#main-vue{
+  overflow: hidden;
+
+}
+</style>

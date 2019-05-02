@@ -37,7 +37,7 @@ export default {
 .wrapper {
   display: flex;
   width: 100%;
-  background-image: url('../../assets/images/gingerbeer9.jpg');
+  background-image: url('../../assets/images/saxon.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -48,6 +48,7 @@ export default {
   position: relative;
   text-align: center;
   top: 35%;
+  text-shadow: 2px 2px #000000;
 }
 .layout-wrapper {
   /* position: relative; */

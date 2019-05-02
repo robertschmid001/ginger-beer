@@ -3,7 +3,7 @@
     <v-layout align-center column justify-center>
       <v-carousel height="auto" interval="8000" max="100" class="carousel" hide-delimiters v-model="carouselIndex">
         <v-carousel-item
-          v-for="(item, i) in filterObjects"
+          v-for="(item, i) in articles"
           :key="i"
           :src="item.image" class="pointer carousel-item" alt="item.title" @click.native="click(item, i)"
         >{{carouselIndex}}</v-carousel-item>
@@ -22,42 +22,7 @@ export default {
       carouselIndex: null,
       activeProduct:'',
       n: 0,
-      articles: [{
-        image: require('../../assets/images/beers/gingerbeer2.jpg'),
-        title: "This is a title1",
-        description: "This is just a random1 description of the current, selected product",
-        cat: "drink"
-      },
-      {
-        image: require('../../assets/images/beers/gingerbeer2.jpg'),
-        title: "This is a title2",
-        description: "This is just a random2 description of the current, selected product",
-        cat: "drink"
-      },
-      {
-        image: require('../../assets/images/beers/gingerbeer2.jpg'),
-        title: "This is a title3",
-        description: "This is just a random3 description of the current, selected product",
-        cat: "drink"
-      },
-      {
-        image: require('../../assets/images/beers/gingerbeer2.jpg'),
-        title: "This is a title4",
-        description: "This is just a random4 description of the current, selected product",
-        cat: "drink"
-      },
-      {
-        image: require('../../assets/images/beers/gingerbeer2.jpg'),
-        title: "This is a title3",
-        description: "This is just a random3 description of the current, selected product",
-        cat: "drink"
-      },
-      {
-        image: require('../../assets/images/beers/gingerbeer2.jpg'),
-        title: "This is a title4",
-        description: "This is just a random4 description of the current, selected product",
-        cat: "drink"
-      },
+      articles: [
       {
         image: require('../../assets/images/objects/gingerbeer3.jpg'),
         title: "This is an object4",
@@ -90,14 +55,6 @@ export default {
   computed: {
     active () {
       return this.activeProduct
-    },
-    filterObjects () {
-      var filtered = this.articles.filter(e => {
-        if (e.cat === "object") {
-          return e
-        }
-      })
-      return filtered
     }
   },
   components: {

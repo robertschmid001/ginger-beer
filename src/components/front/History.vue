@@ -12,7 +12,7 @@
 <br>
       &nbsp; Mercia ...Danelaw ...stride King Offa's Wall to the brave Celts ...down to Wessex past the bandits of Londiniun (if you dare). 
 <br>
-      &nbsp; Travel by coach ...or on horseback ...to festivals of Musique ...or reinventions of Battles of Old...
+      &nbsp; Travel by coach ...or on horseback ...to festivals of Musique ...or reinventions of Battles of Olde...
 <br><br>
       &nbsp; Download ...Bushcraft ...Bloodstock ...Ramblin' Man ...Castles of Hever ..Ludlow ..York ..Cardiff ...Caerphilly..
       <br><br>
